@@ -12,12 +12,14 @@ body {
 
 .header {
     padding:25px;
-    background-color: rgba(74, 156, 227, 0.495);
+    color: white;
+    background-color: rgba(92, 92, 140, 0.866);
     text-align: center;
 }
 
 .container-cards {
     display: flex;
+    justify-content:center;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -31,8 +33,6 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     background: #f3f0f0;
-    margin: 15px;
-    
 }
 
 
@@ -57,7 +57,7 @@ body {
     bottom: 0;
     height: 65%;
     width: 100%;
-    flex-basis: 25%;
+    font-size: 14px;
 }
 
 .card ul {
@@ -66,6 +66,10 @@ body {
     padding: 0; 
     margin: 15px;
     border-radius: 15px;
+}
+
+.card ul a {
+    text-decoration: none;
 }
 
 .card li {

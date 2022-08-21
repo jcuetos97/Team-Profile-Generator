@@ -1,0 +1,30 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Profile generator based on answers to prompted questions",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcuetos97/Team-Profile-Generator.git"
+  },
+  "keywords": [
+    "Profile",
+    "Generator"
+  ],
+  "author": "Juan José Espinosa C.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcuetos97/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/jcuetos97/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.1.0",
+    "jest": "^28.1.3"
+  }
+}

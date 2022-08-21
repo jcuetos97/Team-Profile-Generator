@@ -12,7 +12,7 @@ function createManager (manager) {
             <div class="card-body">
                 <ul>
                     <li>ID: ${manager.getId()}</li>
-                    <li>Email: ${manager.getInfo()}</li>
+                    <li>Email:<a href="mailto:${manager.getInfo()}" target="_blank"> ${manager.getInfo()}</a></li>
                     <li>Office Number: ${manager.getOfficeNumber()}</li>
                 </ul>
             </div>
@@ -33,8 +33,8 @@ function createEngineer (engineer) {
             <div class="card-body">
                 <ul>
                     <li>ID: ${engineer.getId()}</li>
-                    <li>Email: ${engineer.getInfo()}</li>
-                    <li>GitHub: ${engineer.getGitHub()}</li>
+                    <li>Email:<a href="mailto:${engineer.getInfo()}" target="_blank"> ${engineer.getInfo()}</a></li>
+                    <li>GitHub:<a href="https://github.com/${engineer.getGitHub()}" target="_blank"> ${engineer.getGitHub()}</a></li>
                 </ul>
             </div>
         </section>
@@ -54,7 +54,7 @@ return `
             <div class="card-body">
                 <ul>
                     <li>ID: ${intern.getId()}</li>
-                    <li>Email: ${intern.getInfo()}</li>
+                    <li>Email:<a href="mailto:${intern.getInfo()}" target="_blank"> ${intern.getInfo()}</a></li>
                     <li>School: ${intern.getSchool()}</li>
                 </ul>
             </div>
@@ -77,8 +77,6 @@ function generateHTML (companyStaff, companyName) {
     html.push(companyStaff
         .filter(employee => employee.getRole() === "Intern")
         .map(intern => createIntern(intern)))
-
-    html.join("")    
     
     return `
 <!DOCTYPE html>
@@ -89,14 +87,14 @@ function generateHTML (companyStaff, companyName) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${companyName} Team Profile</title>
     <script src="https://kit.fontawesome.com/e601f25512.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="C:\Users\Juan Jo\TEC BOOTCAMP\Team Profile-Generator\dist\css\style.css">
+    <link rel="stylesheet" href="./dist/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>${companyName} Team Profile</h1>
     </header>
     <section class="container-cards">
-        ${html}
+        ${html.join("")}
     </section>
 </body>
 </html>  

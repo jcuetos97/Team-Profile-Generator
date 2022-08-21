@@ -1,6 +1,6 @@
 // Packages for this application
 const inquirer =  require ("inquirer");
-const generateHTML = require ("./dist/js/generateHTML");
+const generateHTML = require ("./src/generateHTML");
 const fs = require ("fs");
 const Employee = require("./lib/employee.js");
 const Engineer = require("./lib/engineer.js");

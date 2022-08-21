@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Krub:400,700');
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: 'Krub', sans-serif;
+}
+
+
+.header {
+    padding:25px;
+    background-color: rgba(74, 156, 227, 0.495);
+    text-align: center;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.card {
+    position: relative;
+    height: 310px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background: #f3f0f0;
+    margin: 15px;
+    
+}
+
+
+.card-heading {
+    position: absolute;
+    top: 0;
+    height: 35%;
+    width: 100%;
+    background-color: rgb(92, 92, 140);
+     
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-heading h1 {
+    margin-left: 12px;
+    color: white;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    height: 65%;
+    width: 100%;
+    flex-basis: 25%;
+}
+
+.card ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.card li {
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border: rgba(148, 144, 144, 0.474) solid 1px;
+}

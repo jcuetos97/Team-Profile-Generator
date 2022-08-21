@@ -245,7 +245,7 @@ function addIntern() {
 
 
 function buildupHTML () {
-    console.log("Hello"); 
+    console.log(companyStaff); 
     fs.writeFile(`./dist/${companyName}-HTML.html`, generateHTML (companyStaff, companyName), "UTF-8", (err) => {
         if (err)
           console.log(err);

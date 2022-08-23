@@ -17,8 +17,7 @@ function createManager (manager) {
                 </ul>
             </div>
         </section>
-    </section>
-    `
+    </section>`
 }
 
 // Function generates HTML structure for Engineer Profile Card
@@ -38,8 +37,7 @@ function createEngineer (engineer) {
                 </ul>
             </div>
         </section>
-    </section>
-    `
+    </section>`
     }
 
 // Function generates HTML structure for Intern Profile Card
@@ -59,8 +57,7 @@ return `
                 </ul>
             </div>
         </section>
-    </section>
-    `
+    </section>`
 }
 
 
@@ -68,15 +65,18 @@ return `
 function generateHTML (companyStaff, companyName) {
     html.push(companyStaff
         .filter(employee => employee.getRole() === "Manager")
-        .map(manager => createManager(manager)))
-
+        .map(manager => createManager(manager))
+        );
     html.push(companyStaff
         .filter(employee => employee.getRole() === "Engineer")
-        .map(engineer => createEngineer(engineer)))
-    
+        .map(engineer => createEngineer(engineer))
+        .join("")
+        );   
     html.push(companyStaff
         .filter(employee => employee.getRole() === "Intern")
-        .map(intern => createIntern(intern)))
+        .map(intern => createIntern(intern))
+        .join("")
+        );
     
     return `
 <!DOCTYPE html>
@@ -87,7 +87,7 @@ function generateHTML (companyStaff, companyName) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${companyName} Team Profile</title>
     <script src="https://kit.fontawesome.com/e601f25512.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
@@ -97,8 +97,7 @@ function generateHTML (companyStaff, companyName) {
         ${html.join("")}
     </section>
 </body>
-</html>  
-    `;
+</html>`;
 }
 
 module.exports = generateHTML;

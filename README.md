@@ -6,10 +6,10 @@
 
 This is a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Because testing is key to making code maintainable, this project includes unit tests for each part of the code written, ensuring that it passes all of them.
 
-![Demo](./assets/images/SS%20Demo.png)
+![Demo](dist\images\SS DEMO.png)
 
-## [Demo Video](./assets/images/Readme%20Generator%20Demo.mp4)
-[Link to video](https://drive.google.com/file/d/1nj4svth5h1QONIEZ5B7Yi7TDmiZfoTBo/view) 
+## [Demo Video](dist\images\Team-Profile Generator Demo.webm)
+[Link to video](https://drive.google.com/file/d/1GEQNU5Sw9neb_LU-KwUL9GAUd7uRkv2p/view) 
 
 ## Table of Contents
 * [Description](#description)
@@ -37,9 +37,9 @@ The application is covered under the following license:
 
 Credits:
 
-*NodeJS: https://nodejs.org/en/
-*Jest: https://www.npmjs.com/package/jest
-*Inquirer: https://www.npmjs.com/package/inquirer
+- NodeJS: https://nodejs.org/en/
+- Jest: https://www.npmjs.com/package/jest
+- Inquirer: https://www.npmjs.com/package/inquirer
 
 
 ## [Contributing](#table-of-contents)
